@@ -231,3 +231,126 @@ body {
 .footer .copyright {
   color: #666699;
 }
+
+/* Comments */
+.comments-section {
+  margin-bottom: 2rem;
+}
+
+.comment-form {
+  display: grid;
+  gap: 8px;
+  max-width: 650px;
+}
+
+.comment-form label {
+  color: #32d7fc;
+  font-weight: bold;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  border: 2px inset #8888ff;
+  border-radius: 6px;
+  padding: 10px;
+  font: inherit;
+  color: #ffffff;
+  background: #1b0040;
+}
+
+.comment-form input::placeholder,
+.comment-form textarea::placeholder {
+  color: #aaaacc;
+}
+
+.comment-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  outline: 2px solid #00ffff;
+  outline-offset: 2px;
+}
+
+.comment-form button {
+  width: fit-content;
+  margin-top: 4px;
+  border: 3px outset #8888ff;
+  padding: 8px 16px;
+  font: inherit;
+  font-weight: bold;
+  color: #ffff00;
+  background: #333399;
+  cursor: pointer;
+}
+
+.comment-form button:hover,
+.comment-form button:focus-visible {
+  border-style: inset;
+  background: #222266;
+}
+
+.comment-status {
+  min-height: 1.6em;
+  margin: 0;
+  color: #ffff00 !important;
+}
+
+.comment-list {
+  display: grid;
+  gap: 12px;
+  max-width: 650px;
+  margin-top: 20px;
+}
+
+.comment-card {
+  border: 2px outset #8888ff;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #1b0040;
+}
+
+.comment-card header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.comment-card h3 {
+  margin: 0;
+  color: #32d7fc;
+  font-size: 1rem;
+}
+
+.comment-card p {
+  margin: 10px 0 0;
+  color: #ccccff;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.comment-date {
+  color: #aaaacc;
+  font-size: 0.8rem;
+}
+
+.comment-delete {
+  margin-top: 10px;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: #00ffff;
+  background: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.comment-delete:hover,
+.comment-delete:focus-visible {
+  color: #ff88ff;
+}

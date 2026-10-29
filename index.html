@@ -35,6 +35,8 @@
         <a href="#cv">CV</a>
         <span>|</span>
         <a href="#contact">Contact</a>
+        <span>|</span>
+        <a href="#comments">Comments</a>
       </nav>
 
       <hr class="divider" />
@@ -93,6 +95,38 @@
           </p>
           
         </section>
+        <section id="comments" class="section comments-section">
+          <h2>Comments</h2>
+          <p>Leave a comment or say hello. Comments are saved in this browser.</p>
+
+          <form id="comment-form" class="comment-form">
+            <label for="comment-name">Name</label>
+            <input
+              id="comment-name"
+              name="name"
+              type="text"
+              maxlength="40"
+              placeholder="Your name"
+              required
+            />
+
+            <label for="comment-message">Comment</label>
+            <textarea
+              id="comment-message"
+              name="message"
+              rows="4"
+              maxlength="500"
+              placeholder="Write a comment..."
+              required
+            ></textarea>
+
+            <button type="submit">Post Comment</button>
+            <p id="comment-status" class="comment-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div id="comment-list" class="comment-list" aria-live="polite"></div>
+        </section>
+      
       </main>
 
       <hr class="divider" />
