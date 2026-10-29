@@ -1,0 +1,233 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box
+}
+
+body {
+  font-family: "Helvetica Neue", "Chalkboard SE", "Comic Sans", cursive;
+  line-height: 1.6;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #8800ff,
+    #ff32ad
+  );
+  color: #00ff00;
+  overflow-x: hidden;
+}
+
+/* Starfield background */
+.stars {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(2px 2px at 10% 20%, #fff, transparent),
+    radial-gradient(2px 2px at 30% 65%, #fff, transparent),
+    radial-gradient(2px 2px at 50% 10%, #fff, transparent),
+    radial-gradient(2px 2px at 70% 40%, #fff, transparent),
+    radial-gradient(2px 2px at 90% 80%, #fff, transparent),
+    radial-gradient(2px 2px at 35% 93%, #fff, transparent),
+    radial-gradient(2px 2px at 77% 60%, #fff, transparent),
+    radial-gradient(2px 2px at 38% 68%, #fff, transparent),
+    radial-gradient(2px 2px at 12% 21%, #fff, transparent),
+    radial-gradient(2px 2px at 97% 13%, #fff, transparent),
+    radial-gradient(2px 2px at 72% 63%, #fff, transparent),
+    radial-gradient(2px 2px at 67% 83%, #fff, transparent),
+    radial-gradient(2px 2px at 87% 99%, #fff, transparent),
+    radial-gradient(2px 2px at 55% 38%, #fff, transparent),
+    radial-gradient(2px 2px at 18% 67%, #fff, transparent),
+    radial-gradient(2px 2px at 15% 85%, #fff, transparent),
+    radial-gradient(2px 2px at 45% 55%, #fff, transparent),
+    radial-gradient(2px 2px at 75% 15%, #fff, transparent),
+    radial-gradient(2px 2px at 85% 50%, #fff, transparent),
+    radial-gradient(2px 2px at 25% 35%, #fff, transparent);
+  background-size: 100% 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  max-width: 10000px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+  text-align: center;
+}
+
+/* Profile header */
+.profile {
+  margin-bottom: 8px;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px outset #ff00ff;
+  background: #ffff00;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 16px;
+  box-shadow: 0 0 20px #ff00ff;
+}
+
+.name {
+  font-family: "Helvetica Neue", Times, serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: #ffffff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.welcome {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+
+
+/* Divider */
+.divider {
+  border: none;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    #f200ff,
+    #ff0062
+  );
+  margin: 16px auto;
+  max-width: 400px;
+}
+
+/* Navigation */
+.nav {
+  font-size: 1rem;
+}
+
+.nav a {
+  color: #32d7fc;
+  font-weight: bold;
+}
+
+
+
+.nav span {
+  color: #ffffff;
+  margin: 0 4px;
+}
+
+/* Sections */
+.section {
+  position: relative;
+  right: 10px;
+  background: #2e0066;
+  border: 2px outset #8888ff;
+  border-radius: 20px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.section h2 {
+  font-family: "Helvetica Neue", Times, serif;
+  color: #32d7fc;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #ff00ff;
+  padding-bottom: 6px;
+}
+
+.section p {
+  color: #ccccff;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.section a {
+  color: #00ffff;
+}
+
+.section a:visited {
+  color: #ff88ff;
+}
+
+.interest-list,
+.link-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.interest-list li,
+.link-list li {
+  color: #ccccff;
+  padding: 4px 0;
+  border-bottom: 1px dotted #4444aa;
+}
+
+.link-list a {
+  color: #00ffff;
+}
+
+
+
+.button {
+  display: inline-block;
+  background: #333399;
+  color: #ffff00 !important;
+  border: 3px outset #8888ff;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  border-style: inset;
+  background: #222266;
+}
+
+.button:visited {
+  color: #ffff00 !important;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.85rem;
+  color: #8888cc;
+}
+
+.footer .counter {
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.footer .updated {
+  color: #ff88ff;
+  margin-bottom: 6px;
+}
+
+.footer .disclaimer {
+  color: #ffff00;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.footer .copyright {
+  color: #666699;
+}
